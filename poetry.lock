@@ -1,0 +1,110 @@
+[[package]]
+category = "main"
+description = "Python package for providing Mozilla's CA Bundle."
+name = "certifi"
+optional = false
+python-versions = "*"
+version = "2020.6.20"
+
+[[package]]
+category = "main"
+description = "Protocol Buffers"
+name = "protobuf"
+optional = false
+python-versions = "*"
+version = "3.12.2"
+
+[package.dependencies]
+setuptools = "*"
+six = ">=1.9"
+
+[[package]]
+category = "main"
+description = "Rook is a Python package for on the fly debugging and data extraction for application in production"
+name = "rook"
+optional = false
+python-versions = "*"
+version = "0.1.111"
+
+[package.dependencies]
+certifi = "*"
+protobuf = ">=3.7.1,<=4.0.0"
+six = ">=1.11"
+websocket-client = ">=0.56.0"
+
+[package.extras]
+ssl_backport = ["backports.ssl", "backports.ssl-match-hostname", "pyopenssl"]
+
+[[package]]
+category = "main"
+description = "Python 2 and 3 compatibility utilities"
+name = "six"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+version = "1.15.0"
+
+[[package]]
+category = "main"
+description = "WebSocket client for Python. hybi13 is supported."
+name = "websocket-client"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "0.57.0"
+
+[package.dependencies]
+six = "*"
+
+[metadata]
+content-hash = "ee71f7dc32f4dc419908e68a3d9443305c61e272c368b60771667aa03ddc2c54"
+python-versions = "^3.8"
+
+[metadata.files]
+certifi = [
+    {file = "certifi-2020.6.20-py2.py3-none-any.whl", hash = "sha256:8fc0819f1f30ba15bdb34cceffb9ef04d99f420f68eb75d901e9560b8749fc41"},
+    {file = "certifi-2020.6.20.tar.gz", hash = "sha256:5930595817496dd21bb8dc35dad090f1c2cd0adfaf21204bf6732ca5d8ee34d3"},
+]
+protobuf = [
+    {file = "protobuf-3.12.2-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:e1464a4a2cf12f58f662c8e6421772c07947266293fb701cb39cd9c1e183f63c"},
+    {file = "protobuf-3.12.2-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:6f349adabf1c004aba53f7b4633459f8ca8a09654bf7e69b509c95a454755776"},
+    {file = "protobuf-3.12.2-cp35-cp35m-macosx_10_9_intel.whl", hash = "sha256:be04fe14ceed7f8641e30f36077c1a654ff6f17d0c7a5283b699d057d150d82a"},
+    {file = "protobuf-3.12.2-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:f4b73736108a416c76c17a8a09bc73af3d91edaa26c682aaa460ef91a47168d3"},
+    {file = "protobuf-3.12.2-cp35-cp35m-win32.whl", hash = "sha256:5524c7020eb1fb7319472cb75c4c3206ef18b34d6034d2ee420a60f99cddeb07"},
+    {file = "protobuf-3.12.2-cp35-cp35m-win_amd64.whl", hash = "sha256:bff02030bab8b969f4de597543e55bd05e968567acb25c0a87495a31eb09e925"},
+    {file = "protobuf-3.12.2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:c9ca9f76805e5a637605f171f6c4772fc4a81eced4e2f708f79c75166a2c99ea"},
+    {file = "protobuf-3.12.2-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:304e08440c4a41a0f3592d2a38934aad6919d692bb0edfb355548786728f9a5e"},
+    {file = "protobuf-3.12.2-cp36-cp36m-win32.whl", hash = "sha256:b5a114ea9b7fc90c2cc4867a866512672a47f66b154c6d7ee7e48ddb68b68122"},
+    {file = "protobuf-3.12.2-cp36-cp36m-win_amd64.whl", hash = "sha256:85b94d2653b0fdf6d879e39d51018bf5ccd86c81c04e18a98e9888694b98226f"},
+    {file = "protobuf-3.12.2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:a7ab28a8f1f043c58d157bceb64f80e4d2f7f1b934bc7ff5e7f7a55a337ea8b0"},
+    {file = "protobuf-3.12.2-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:eafe9fa19fcefef424ee089fb01ac7177ff3691af7cc2ae8791ae523eb6ca907"},
+    {file = "protobuf-3.12.2-cp37-cp37m-win32.whl", hash = "sha256:612bc97e42b22af10ba25e4140963fbaa4c5181487d163f4eb55b0b15b3dfcd2"},
+    {file = "protobuf-3.12.2-cp37-cp37m-win_amd64.whl", hash = "sha256:e72736dd822748b0721f41f9aaaf6a5b6d5cfc78f6c8690263aef8bba4457f0e"},
+    {file = "protobuf-3.12.2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:87535dc2d2ef007b9d44e309d2b8ea27a03d2fa09556a72364d706fcb7090828"},
+    {file = "protobuf-3.12.2-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:50b5fee674878b14baea73b4568dc478c46a31dd50157a5b5d2f71138243b1a9"},
+    {file = "protobuf-3.12.2-py2.py3-none-any.whl", hash = "sha256:a96f8fc625e9ff568838e556f6f6ae8eca8b4837cdfb3f90efcb7c00e342a2eb"},
+    {file = "protobuf-3.12.2.tar.gz", hash = "sha256:49ef8ab4c27812a89a76fa894fe7a08f42f2147078392c0dee51d4a444ef6df5"},
+]
+rook = [
+    {file = "rook-0.1.111-cp27-cp27m-macosx_10_11_x86_64.whl", hash = "sha256:c01937c1b5f8cd1903aa89506b749259e232229fdfdf97771e31463245d36ada"},
+    {file = "rook-0.1.111-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:8984ea6d3858522c2f418b096dab24b5db2dd609923f5107f560935be99f93ad"},
+    {file = "rook-0.1.111-cp27-cp27mu-manylinux2010_x86_64.whl", hash = "sha256:76c13373a6331781c66f2ebe394bb86e1158c73f729f86a178b1a2761a661871"},
+    {file = "rook-0.1.111-cp35-cp35m-macosx_10_11_x86_64.whl", hash = "sha256:22fe52efb617617258bb1be746e6bb48248f2ea03a0332aa860917ef3ed3223e"},
+    {file = "rook-0.1.111-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:bb45f6b147c20aaf9887378a930aa28f84ea7d7e54ad8d1c77c128603cdfbbb3"},
+    {file = "rook-0.1.111-cp35-cp35m-manylinux2010_x86_64.whl", hash = "sha256:1e07a6e36dfdfbfb00aabc1f7f0ae3cd551140932942dce9d33da919451d4b3c"},
+    {file = "rook-0.1.111-cp36-cp36m-macosx_10_11_x86_64.whl", hash = "sha256:fb45d18cf0aa013f00d3b621c540dab22c52f5910199117925caa08f7be54a4e"},
+    {file = "rook-0.1.111-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:c9bef6300a6ba2dfd25ebb24c703d40f6487cf146687b535d74175ec7a3ccc0c"},
+    {file = "rook-0.1.111-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:be1842ea2e2c45a844b01c20e5961d612bc11a06c4138da3784aaf2e92b7f8cb"},
+    {file = "rook-0.1.111-cp37-cp37m-macosx_10_11_x86_64.whl", hash = "sha256:a8436a11421d0e645b4abebbd7adad05059ad563a2f9f52d2494487f6b63bbec"},
+    {file = "rook-0.1.111-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:076426c3f1fd529761f078b90ae116dc0ec424cebe39d9d777a024c48c1e46b6"},
+    {file = "rook-0.1.111-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:27be877d0deaa3db69dfd63c41038c7ad7c7a461974c6ed4734d5c3cd41a36b8"},
+    {file = "rook-0.1.111-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:a10941f57c9acb051edcda3b67a1b237ac84fd7b8ef24a50f33486407fc9151e"},
+    {file = "rook-0.1.111-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:9d07706815462ce6bccdeed45405b55ad2c1f6db29682d1b0ed9aeda4216f7d7"},
+    {file = "rook-0.1.111.tar.gz", hash = "sha256:5dd121c910ba4d2e62f5026f2dc3775a9daf82aee8ec2886323a566e036af9e5"},
+]
+six = [
+    {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
+    {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
+]
+websocket-client = [
+    {file = "websocket_client-0.57.0-py2.py3-none-any.whl", hash = "sha256:0fc45c961324d79c781bab301359d5a1b00b13ad1b10415a4780229ef71a5549"},
+    {file = "websocket_client-0.57.0.tar.gz", hash = "sha256:d735b91d6d1692a6a181f2a8c9e0238e5f6373356f561bb9dc4c7af36f452010"},
+]
